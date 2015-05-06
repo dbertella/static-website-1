@@ -1,0 +1,22 @@
+{
+  "name": "react-starter",
+  "version": "0.0.0",
+  "authors": [
+    "dbertella <daniele.bertella@gmail.com>"
+  ],
+  "description": "Base per iniziare lo sviluppo con react / gulp",
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "gulp"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,350 @@
+
+.alignleft {
+	float: left;
+	margin-right: 1em; 
+}
+.img-right {
+	position: absolute;
+	left: 50%;
+	bottom: 150px;
+	transform: translateX(100%);
+	&.home {
+		transform: translate(150%, 50%) scale(0.5);
+	}
+}
+
+// .fp-viewing-home {
+	
+// }
+.fp-viewing-presentation {
+	.bg_sky img {
+		transform: translate(-50%, -50%) rotate(10deg);
+	}
+	.classiche {
+		transform: translate(-35%, 5%) scale(0.3) rotate(5deg);
+	}
+	.girotondi {
+		transform: translate(-140%, -95%) scale(0.25) rotate(-10deg);
+	}
+	.nuggets {
+		transform: translate(-20%, -80%) scale(0.15) rotate(20deg);
+	}
+	.tower {
+		transform: translate(30%, -80%) scale(0.35) rotate(-150deg);
+	}
+}
+[class^="fp-viewing-characters-"] {
+	.bg_sky img {
+		transform: translate(-50%, -50%) rotate(20deg);
+	}
+	.classiche {
+		transform: translate(-115%, 5%) scale(0.4) rotate(-15deg);
+	}
+	.girotondi {
+		transform: translate(-120%, -75%) scale(0.2) rotate(10deg);
+	}
+	.nuggets {
+		transform: translate(20%, -60%) scale(0.3) rotate(-20deg);
+	}
+	.tower {
+		transform: translate(-130%, -80%) scale(0.35) rotate(100deg);
+	}
+}
+.fp-viewing-story {
+	.bg_sky img {
+		transform: translate(-50%, -50%) rotate(30deg);
+	}
+	.classiche {
+		transform: translate(-115%, 5%) scale(0.5) rotate(-15deg);
+	}
+	.girotondi {
+		transform: translate(-120%, -75%) scale(0.5) rotate(10deg);
+	}
+	.nuggets {
+		transform: translate(20%, -60%) scale(0.4) rotate(-20deg);
+	}
+}
+.fp-viewing-discover {
+	.bg_sky img {
+		transform: translate(-50%, -50%) rotate(40deg);
+	}
+	.classiche {
+		transform: translate(-115%, 5%) scale(0) rotate(-15deg);
+	}
+	.girotondi {
+		transform: translate(-120%, -75%) scale(0) rotate(10deg);
+	}
+	.nuggets {
+		transform: translate(20%, -60%) scale(0) rotate(-20deg);
+	}
+}
+.home__background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1; 
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		max-width: 2048px;
+		transform: translate(-50%, -50%);
+		transition: transform 0.4s ease-in-out;
+	}
+}
+.floating__elements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 201;
+	pointer-events: none;
+} 
+[class^="background"] {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: transform 0.4s ease-in-out;
+}
+.bg_sky {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: transform 0.4s ease-in-out;
+}
+.tower {
+	transform: translate(-130%, -80%) scale(0) rotate(0);
+}
+.tower-small {
+	display: none;
+}
+.cars {
+	display: none;
+}
+.umbrellas {
+	transform: translate(-130%, -145%) scale(0.5);
+}
+.bikes {
+	transform: translate(130%, 145%) scale(0.8);
+}
+
+.classiche {
+	transform: translate(-115%, 5%) scale(0.5) rotate(-15deg);
+}
+.girotondi {
+	transform: translate(-120%, -75%) scale(0.3) rotate(10deg);
+}
+.nuggets {
+	transform: translate(20%, -60%) scale(0.4) rotate(-20deg);
+}
+
+.home__menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+	text-align: center;
+	background: $arancio;
+	z-index: 200;
+}
+div[class^="col-"] {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 45px;
+	background: $arancio;
+	z-index: 200;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 147px;
+		width: 260px;
+		height: 92px;
+	}
+}
+.col-right {
+	right: 0;
+	&:before {
+		right: 3px;
+		background: url(../img/curva-right.png);
+	}
+}
+.col-left {
+	left: 0;
+	&:before {
+		left: 3px;
+		background: url(../img/curva-left.png);
+	}
+}
+.loghi img {
+	margin: 2px 10px;
+	// &.d-block {
+	// 	display: block;
+	// 	margin: 2px auto;
+	// }
+}
+
+#fullpage {
+	z-index: 10;
+}
+#fp-nav {
+	z-index: 201;
+}
+[class^="content__"] {
+	padding-top: 60px;
+	text-align: center;
+	font-size: 50px;
+	line-height: 1.5;
+	color: #fff;
+	font-weight: 600;
+	text-shadow: 3px 3px 4px #42495A;
+}
+.content__home {
+	font-size: 60px;
+	font-weight: 700;
+	color: $rosso;
+	text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;  
+    p {
+    	margin: 0;
+    }
+    .smaller {
+    	font-size: 35px;
+    	margin-top: -10px;
+    }
+}
+.content__presentation {
+	img {
+		display: inline-block;
+	}
+	.description {
+		display: inline-block;
+		position: relative;
+		top: -140px;
+		text-align: left;
+		margin-left: 1em;
+	}
+
+}
+.content__characters {
+	.slide {
+		position: relative;
+	}
+	.fp-controlArrow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		overflow: hidden;
+		height: 122px;
+		cursor: pointer;
+		background-image: url('../img/base_descrizione.png');
+		width: 148px;
+		z-index: 120;
+		transition: transform 0.4s linear;
+		&.fp-next {
+			background-position: 0 -571px;
+			transform: matrix(1, -0.14, 0.14, 1, 270, 60);
+			&:hover {
+				background-position: 0 -692px;
+				transform: matrix(1.04, -0.15, 0.15, 1.04, 270, 60);
+			}
+		}
+		&.fp-prev {
+			background-position: 0 -1257px;
+			transform: matrix(1, -0.14, 0.14, 1, -310, 170);
+			&:hover {
+				background-position: 0 -1378px;
+				transform: matrix(1.04, -0.15, 0.15, 1.04, -310, 170);
+			}
+		}
+	}
+	.info {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		text-align: center;
+		background-image: url('../img/base_descrizione.png');
+		background-repeat: no-repeat;
+		z-index: 10;
+		height: 221px;
+		width: 441px;
+		transform: translate3d(0);
+		&.oh-disco {
+			background-position: 0 -815px;
+		}
+		&.oh-v {
+			background-position: 0 -1036px;
+		}
+		&.oh-tip {
+			background-position: 0 -351px;
+		}
+		&.oh-pig {
+			background-position: 0 -1501px;
+		}
+		&.oh-tip-pig {
+			background-position: 0 -1722px;
+		}
+		&.smek {
+			background-position: 0 -1943px;
+		}
+		&.kyle {
+			background-position: 0 -815px;
+		}
+		h3 {
+			font-size: 40px;
+			margin: 0.5em;
+			color: yellow;
+		}
+		p {
+			font-size: 19px;
+			margin: 1.8em 1.3em;
+		}
+	}
+}
+.content__story {
+	p > img {
+		top: 16px;
+	}
+}
+
+.content__discover {
+	background: url(../img/bg-prodotti.jpg) center center no-repeat;
+	background-size: cover;
+	a {
+		color: yellow;
+		font-size: 40px;
+	}
+	p {
+		margin: 0;
+	}
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 115px;
+	padding: 1em;
+	padding-top: 2em;
+	font-size: 13px;
+	color: #fff;
+	background: #39417B;
+	z-index: 201;
+	transform: translateY(100%);
+	transition: transform 0.3s ease-in-out;
+	a {
+		color: rgba(#fff, 0.5);
+	}
+	.fp-viewing-discover & {
+		transform: translateY(0);
+	}
+}
